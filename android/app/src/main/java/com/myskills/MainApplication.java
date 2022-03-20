@@ -8,6 +8,7 @@ import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.BuildConfig;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -18,7 +19,7 @@ public class MainApplication extends Application implements ReactApplication {
       new ReactNativeHost(this) {
         @Override
         public boolean getUseDeveloperSupport() {
-          return BuildConfig.DEBUG;
+            return true;
         }
 
         @Override
